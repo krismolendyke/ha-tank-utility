@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Any
+from typing import Any, TypeAlias
 
 import requests
 from tank_utility import auth, device
@@ -15,7 +15,7 @@ from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, Upda
 
 from .const import DEFAULT_SCAN_INTERVAL, DOMAIN, LOGGER
 
-type TankUtilityConfigEntry = ConfigEntry[TankUtilityDataUpdateCoordinator]
+TankUtilityConfigEntry: TypeAlias = ConfigEntry["TankUtilityDataUpdateCoordinator"]
 
 
 class TankUtilityDataUpdateCoordinator(
