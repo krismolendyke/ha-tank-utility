@@ -1,45 +1,38 @@
 {
-  "config": {
-    "abort": {
-      "already_configured": "Account is already configured",
-      "cannot_connect": "Failed to connect",
-      "invalid_auth": "Invalid authentication",
-      "unknown": "Unexpected error"
-    },
-    "error": {
-      "cannot_connect": "Failed to connect",
-      "invalid_auth": "Invalid authentication",
-      "unknown": "Unexpected error"
-    },
-    "step": {
-      "reauth_confirm": {
-        "data": {
-          "password": "Password"
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured",
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
         },
-        "description": "Please enter your updated password for {email}.",
-        "title": "Authentication expired for {name}"
-      },
-      "user": {
-        "data": {
-          "email": "Email",
-          "password": "Password"
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
         },
-        "description": "Enter your Tank Utility account credentials."
-      }
-    }
-  },
-  "issues": {
-    "deprecated_yaml_import_issue_cannot_connect": {
-      "description": "Configuring Tank Utility using YAML is deprecated.\n\nHome Assistant could not reach Tank Utility while importing your configuration. Please verify your internet connection and try setting up Tank Utility via the UI.",
-      "title": "Tank Utility YAML configuration import failed"
+        "step": {
+            "user": {
+                "data": {
+                    "email": "Email",
+                    "password": "Password"
+                },
+                "description": "Enter your Tank Utility account credentials."
+            }
+        }
     },
-    "deprecated_yaml_import_issue_invalid_auth": {
-      "description": "Configuring Tank Utility using YAML is deprecated.\n\nThe credentials in your YAML were rejected. Please verify your credentials and configure Tank Utility via the UI.",
-      "title": "Tank Utility YAML configuration import failed"
-    },
-    "deprecated_yaml_import_issue_unknown": {
-      "description": "Configuring Tank Utility using YAML is deprecated.\n\nAn unexpected error occurred while importing your configuration. Please configure Tank Utility via the UI.",
-      "title": "Tank Utility YAML configuration import failed"
+    "issues": {
+        "deprecated_yaml_import_issue_cannot_connect": {
+            "description": "Configuring Tank Utility using YAML is deprecated.\n\nHome Assistant could not reach Tank Utility while importing your configuration. Please verify your internet connection and try setting up Tank Utility via the UI.",
+            "title": "Tank Utility YAML configuration import failed"
+        },
+        "deprecated_yaml_import_issue_invalid_auth": {
+            "description": "Configuring Tank Utility using YAML is deprecated.\n\nThe credentials in your YAML were rejected. Please verify your credentials and configure Tank Utility via the UI.",
+            "title": "Tank Utility YAML configuration import failed"
+        },
+        "deprecated_yaml_import_issue_unknown": {
+            "description": "Configuring Tank Utility using YAML is deprecated.\n\nAn unexpected error occurred while importing your configuration. Please configure Tank Utility via the UI.",
+            "title": "Tank Utility YAML configuration import failed"
+        }
     }
-  }
 }
